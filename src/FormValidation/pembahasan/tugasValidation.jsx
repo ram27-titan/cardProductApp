@@ -66,15 +66,15 @@ export default class TugasValidation extends React.Component {
       <form onSubmit={this.handleSubmit}>
         <div>
           <input type="text" name="name" placeholder="name" value={this.state.name} onChange={this.handleChange} />
-          <div style={{ fontSize: 12, color: 'red' }}>{this.state.nameError}</div>
+          <div style={{ fontSize: 14, color: 'red' }}>{this.state.nameError}</div>
         </div>
         <div>
           <input type="email" name="email" placeholder="email" value={this.state.email} onChange={this.handleChange} />
-          <div style={{ fontSize: 12, color: 'red' }}>{this.state.emailError}</div>
+          <div style={{ fontSize: 14, color: 'red' }}>{this.state.emailError}</div>
         </div>
         <div>
           <input type="password" name="password" placeholder="password" value={this.state.password} onChange={this.handleChange} />
-          <div style={{ fontSize: 12, color: 'red' }}>{this.state.passwordError}</div>
+          <div style={{ fontSize: 14, color: 'red' }}>{this.state.passwordError}</div>
         </div>
         <button type="submit">submit</button>
       </form>
